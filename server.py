@@ -5,6 +5,7 @@ import SocketServer
 import os
 import sys
 
+
 class EchoHandler(SocketServer.DatagramRequestHandler):
     """
     Echo server class
@@ -36,7 +37,7 @@ class EchoHandler(SocketServer.DatagramRequestHandler):
                 self.wfile.write("SIP/2.0 200 OK")
             elif metodo == 'BYE':
                 self.wfile.write("SIP/2.0 200 OK")
-            else: 
+            else:
                 print "SIP/2.0 400 Bad Request"
 
 if __name__ == "__main__":
