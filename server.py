@@ -46,7 +46,6 @@ if __name__ == "__main__":
     if len(entrada) != 4:
         print "Usage: python servidor.py IP port audio_file"
         sys.exit()
-
     IPS = entrada[1]
     PORT = entrada[2]
     fich_audio = sys.argv[3]
