@@ -14,7 +14,6 @@ division2 = division[1].split(":")
 IP = division2[0]
 PORT = int(division2[1])
 
-
 # Creamos el socket, lo configuramos y lo atamos a un servidor/puerto
 my_socket = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 my_socket.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
@@ -36,7 +35,6 @@ my_socket.send(line + '\r\n')
 
 try:
     data = my_socket.recv(1024)
-    #info = data.split("\r\n")
     print "Recibido -- " + data
 except:
     print "Fallo de recepcion"
