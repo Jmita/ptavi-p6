@@ -47,10 +47,10 @@ if __name__ == "__main__":
     if len(entrada) != 4:
         print "Usage: python servidor.py IP port audio_file"
         sys.exit()
+    else:
+        print "Listening..."
     IPS = entrada[1]
     PORT = entrada[2]
     fich_audio = sys.argv[3]
     serv = SocketServer.UDPServer(("", int(sys.argv[2])), EchoHandler)
-    #print(sys.argv[2])
-    print "Listening..."
     serv.serve_forever()
