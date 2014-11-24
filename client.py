@@ -7,7 +7,7 @@ import sys
 # Datos introducidos
 metodo = sys.argv[1]
 print metodo
-# Dividimos la entrada para seleccionar los datos 
+# Dividimos la entrada para seleccionar los datos
 division = sys.argv[2].split("@")
 nick = division[0]
 division2 = division[1].split(":")
